@@ -13,6 +13,11 @@ nightly so it might for some reason support nesting but some older browser might
 what i want to try now is to try to get the article on the side, and keep the sections in the middle
 */
 
+/*
+for the grids, i apparently need to set their grid manually for EVERYTHING, which kinda stinks
+but i think that it's ok, because i'm still learning
+*/
+
 
 
 body {
@@ -27,6 +32,10 @@ body {
     grid column 2 refers to the 1fr, which is 1/4th of the screen, and is on the right */
 }
 
+h1 {
+    grid-column: 1;
+}
+
 nav {
     color: red;
     grid-column: 1;
@@ -37,6 +46,7 @@ section {
     grid-column: 1;
     h1 {  /* we'll see if nesting works... */
         color: green;
+        grid-column: 1;
         
     }
 }
@@ -44,4 +54,13 @@ section {
 article {
     border: 5px dotted blue;
     grid-column: 2;
+    grid-row: 1/99;
+}
+
+aside {
+    grid-column: 1;
+}
+
+footer {
+    grid-column: 1;
 }
