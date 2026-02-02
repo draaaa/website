@@ -34,6 +34,9 @@ body {
 
 h1 {
     grid-column: 1;
+    /* i really dont know what the hell cloudflare is doing but its not hooking to the latest css commmits
+    its still using the very first version of the css for some reason, even though ive rebuilt it at least 20 times on the latest commit
+    this shit is really starting to piss me off /*
 }
 
 nav {
