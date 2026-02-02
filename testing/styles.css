@@ -1,0 +1,39 @@
+/* global styles */
+
+/*
+for this file, i will be using a tutorialpedia.org post as a guide to how i can use css
+to format the index.html
+https://www.tutorialpedia.org/blog/define-semantic-element-html-css/
+*/
+
+
+/* 
+first, before i actually start tryign to acquire something i like,
+i need to see what actually does what. i'll be mostly using stuff from the tutorialpedia
+for these first few commits, see how that affects the visuals of the website, then go from there. 
+*/
+
+body {
+    font-family: monospace;
+    /* the body covers ALL of the text, so we don't need to set a new font every time
+    eventually i want to try to use ibm plex mono, but we'll get there eventually*/
+}
+
+nav {
+    color: red;
+    margin-right: 20px;
+}
+
+section {
+    border: 1px solid black;
+    padding: 10px;
+    h1 {  /* we'll see if nesting works... */
+        color: green;
+        
+    }
+}
+
+article {
+    border: 5px dotted blue;
+    margin-bottom: 20px;
+}
