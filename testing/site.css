@@ -1,0 +1,68 @@
+/* global styles */
+
+/*
+for this file, i will be using a tutorialpedia.org post as a guide to how i can use css
+to format the index.html
+https://www.tutorialpedia.org/blog/define-semantic-element-html-css/
+*/
+
+
+/* 
+nesting works, which is cool, but i probably shouldn't really use it. i'm on firefox 
+nightly so it might for some reason support nesting but some older browser might not. i'll do that later
+what i want to try now is to try to get the article on the side, and keep the sections in the middle
+*/
+
+/*
+for the grids, i apparently need to set their grid manually for EVERYTHING, which kinda stinks
+but i think that it's ok, because i'm still learning
+*/
+
+
+
+body {
+    font-family: monospace;
+    /* the body covers ALL of the text, so we don't need to set a new font every time
+    eventually i want to try to use ibm plex mono, but we'll get there eventually*/
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* later we will use 'grid-column: 1;' and 'grid-column: 2;'
+    grid column 1 refers to the 3fr, which is 3/4ths of the screen, and is on the left
+    grid column 2 refers to the 1fr, which is 1/4th of the screen, and is on the right */
+}
+
+h1 {
+    grid-column: 1;
+    /* i really dont know what the hell cloudflare is doing but its not hooking to the latest css commmits
+    its still using the very first version of the css for some reason, even though ive rebuilt it at least 20 times on the latest commit
+    this shit is really starting to piss me off */
+}
+
+nav {
+    color: red;
+    grid-column: 1;
+}
+
+section {
+    border: 1px solid black;
+    grid-column: 1;
+    h1 {  /* we'll see if nesting works... */
+        color: green;
+    }
+}
+
+article {
+    border: 5px dotted blue;
+    grid-column: 2;
+    grid-row: 1/99;
+    background-color: orange;
+}
+
+aside {
+    grid-column: 1;
+}
+
+footer {
+    grid-column: 1;
+}
