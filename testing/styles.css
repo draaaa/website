@@ -33,7 +33,6 @@ nav {
 }
 
 section {
-    flex: 1;
     border: 1px solid black;
     grid-column: 1;
     h1 {  /* we'll see if nesting works... */
