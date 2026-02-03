@@ -33,13 +33,18 @@ h1 {
 div {
     grid-template-columns: 1fr 4fr;
     display: grid;
-    border: 2px solid black;
+    border: 6px solid black;
 }
 
 nav {
     grid-column: 1;
+    border-right: 6px solid black;  /* this is to separate the nav and p */
+
+    font-size: 1.875em; /*  1.875 * 16, which is 30px */
 }
 
 p {
     grid-column: 2;
+
+    font-size: 1.875em; /* 1.875 * 16, which is 30px */
 }
