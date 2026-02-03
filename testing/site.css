@@ -22,47 +22,23 @@ but i think that it's ok, because i'm still learning
 
 body {
     font-family: monospace;
-    /* the body covers ALL of the text, so we don't need to set a new font every time
-    eventually i want to try to use ibm plex mono, but we'll get there eventually*/
-
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* later we will use 'grid-column: 1;' and 'grid-column: 2;'
-    grid column 1 refers to the 3fr, which is 3/4ths of the screen, and is on the left
-    grid column 2 refers to the 1fr, which is 1/4th of the screen, and is on the right */
 }
 
 h1 {
-    grid-column: 1;
-    /* i really dont know what the hell cloudflare is doing but its not hooking to the latest css commmits
-    its still using the very first version of the css for some reason, even though ive rebuilt it at least 20 times on the latest commit
-    this shit is really starting to piss me off */
+    /*nothing...*/
+    font-family: monospace; /* placeholder */
+}
+
+div {
+    grid-template-columns: 1fr 4fr;
+    border: 2px solid black;
 }
 
 nav {
-    color: red;
     grid-column: 1;
 }
 
-section {
-    border: 1px solid black;
-    grid-column: 1;
-    h1 {  /* we'll see if nesting works... */
-        color: green;
-    }
-}
-
-article {
-    border: 5px dotted blue;
+p {
     grid-column: 2;
-    grid-row: 1/99;
-    background-color: orange;
-}
-
-aside {
-    grid-column: 1;
-}
-
-footer {
-    grid-column: 1;
 }
