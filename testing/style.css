@@ -32,6 +32,7 @@ h1 {
 
 div {
     grid-template-columns: 1fr 4fr;
+    display: grid;
     border: 2px solid black;
 }
 
