@@ -38,12 +38,16 @@ div {
 nav {
     grid-column: 1;
     border-right: 6px solid black;  /* this is to separate the nav and p */
+    padding-top: 10px;
+    text-align-last: center;
 
-    font-size: 1.875em; /*  1.875 * 16, which is 30px */
+    font-size: 1.25em; /*  1.875 * 16, which is 30px */
 }
 
 p {
     grid-column: 2;
+    padding-left: 10px;
+    padding-right: 10px;
 
-    font-size: 1.875em; /* 1.875 * 16, which is 30px */
+    font-size: 1.15em; /* 1.875 * 16, which is 30px */
 }
