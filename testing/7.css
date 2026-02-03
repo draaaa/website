@@ -25,12 +25,11 @@ body {
 }
 
 h1 {
-    /*nothing...*/
-    font-family: monospace; /* placeholder */
+    font-size: 40px;
 }
 
 div {
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     display: grid;
     border: 6px solid black;
 }
@@ -41,7 +40,7 @@ nav {
     padding-top: 10px;
     text-align-last: center;
 
-    font-size: 1.25em; /*  1.875 * 16, which is 30px */
+    font-size: 1.45em; 
 }
 
 p {
@@ -49,5 +48,5 @@ p {
     padding-left: 10px;
     padding-right: 10px;
 
-    font-size: 1.15em; /* 1.875 * 16, which is 30px */
+    font-size: 1.2em;
 }
