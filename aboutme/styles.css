@@ -20,13 +20,16 @@ nav {
     font-size: 1.45em;
 }
 
-p {
+main {
     grid-column: 2;
+
+    border-left: 3.5px solid black;
+}
+
+p {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
-
-    border-left: 3.5PX solid black;
     
     font-size: 1.2em;
 }
