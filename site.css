@@ -1,0 +1,31 @@
+body {
+    font-family: monospace;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+div {
+    grid-template-columns: 1fr 5fr;
+    display: grid;
+    border: 3.5px solid black;
+}
+
+nav {
+    grid-column: 1;
+    border-right: 3.5px solid black;
+    padding-top: 10px;
+    text-align-last: center;
+
+    font-size: 1.45em;
+}
+
+p {
+    grid-column: 2;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    
+    font-size: 1.2em;
+}
