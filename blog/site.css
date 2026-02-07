@@ -1,0 +1,44 @@
+body {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+div {
+    grid-template-columns: 1fr 5fr;
+    display: grid;
+    border: 3.5px solid black;
+}
+
+nav {
+    grid-column: 1;
+    padding-top: 10px;
+    text-align-last: center;
+
+    font-size: 1.15em;
+}
+
+main {
+    grid-column: 2;
+    border-left: 3.5px solid black
+}
+
+.blog {
+    grid-column: 2;
+    border-top: 3.5px solid black;
+    border-bottom: 3.5px solid black;
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    
+    font-size: 1em;
+}
