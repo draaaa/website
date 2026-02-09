@@ -3,7 +3,7 @@ body {
     background-color: black;
 }
 
-.wardlow.cc {
+.wardlowcc {
     font-size: 5em;
     color: white;
     position: relative;
@@ -16,4 +16,8 @@ body {
 nav {
     font-size: 1em;
     color: white;
+}
+
+nav:visited {
+    color: gray;
 }
