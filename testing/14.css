@@ -10,6 +10,8 @@ body {
     width: 100%;
     height: 100vh;
 
+    line-height: 1.0;  /* this should mean that there's not alot of space between the two lines. if what i read is correct, 1.0 should make it so that the two lines almost touch? not sure */
+
     z-index: -1; /* this puts it behind everything */
                  /* the default z-index is 0. we can think of the z-index as a layer inside of an image editor like gimp or paint.net */
 }
@@ -20,8 +22,11 @@ we do have the nav section, but nav doesn't contain hyperlinks: it contains <a> 
 so we can specify that we want these nav hyperlinks to have different colors from normal
 if, for example, we had another hyperlink in the .wardlowcc container, its colors would not be affected by nav a {} */
 
+nav {
+    font-size: 1.2em;
+}
+
 nav a {
-    font-size: 1em;
     color: white;
 }
 
