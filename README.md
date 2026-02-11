@@ -1,4 +1,17 @@
 # README.md
+This is all of the source code for the website https://wardlow.cc<br>
+It's really just a personal site that I want to have showing off all of my projects and stuff, as well as a blog thing.<br>
 
-This is the sourcecode to the website I bought, https://wardlow.cc<br>
-I don't have any huge plans to make this website look ultra smooth or anything, I really just want to have a decent looking and relatively simple page that can serve as a reference for who I am, what my projects are, etc.<br>
+### TODO
+- Make a projects section
+- Continue working on design
+- Create a contact/socials section
+I think I want to have the design first before I make the section, it'll probably be easier to do if I have one and then make one using that design rather than changing every single page to use the same design. <br>
+
+### Want to see my projects?
+You're already on my github, so my public repositories are most of my projects, but not all of them!<br>
+I'm still working on adding my actual projects to the website, so you might want to see my Handshake profile instead.<br>
+My handshake profile is up to date and contains all of my projects. You can find it at https://app.joinhandshake.com/profiles/carsonwardlow<br>
+
+### I like this code! I want it!
+This project is under the Unlicense, which means that it's all in the public domain. No attribution required, no license terms, nothing! Feel free to rip it if you wish!
