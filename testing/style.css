@@ -29,8 +29,8 @@ so we can specify that we want these nav hyperlinks to have different colors fro
 if, for example, we had another hyperlink in the .wardlowcc container, its colors would not be affected by nav a {} */
 
 main {
-    margin-top: 120vh;
-    color: white;
+    margin-top: 150vh;  /* with this, i'm trying to push the text below the gradient that i added to the photo */
+    color: white;     /* this is for trying to test aesthetics, of course */
     font-size: 1.2em;
 }
 
