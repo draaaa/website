@@ -6,6 +6,9 @@ body {
     background-position-y: 15%;
     background-size: 100% auto;
 
+    overflow-x: hidden;  /* this should kill scrolling for both directions, but im not entirely sure. */
+    overflow-y: hidden;
+
 }
 
 .wardlowcc {
