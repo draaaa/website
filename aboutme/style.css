@@ -1,30 +1,29 @@
 body {
-    font-family: "IBM Plex Mono", monospace;  /* defaults to monospace, uses IBM Plex Mono if detected */
-    background-image: url(Sitethingy.png);  /* this isnt a url idk why it has to be a url */
+    font-family: "IBM Plex Mono", monospace;
+    background-image: url(Sitethingy.png);
     background-color: black;
     background-repeat: no-repeat;
-    background-position-y: 15%;
+    background-position-y: top;
     background-size: 100% auto;
 
-    overflow-x: hidden;  /* this should kill scrolling for both directions, but im not entirely sure. */
+    overflow-x: hidden;  /* kills horizontal scrolling */
 }
 
 .wardlowcc {
     font-size: 9em;
     color: white;
-    position: absolute;  /* changed from relative, absolute positioning removes it from the normal page flow */
+    position: absolute;
     width: 100%;
     height: 100vh;
 
     line-height: 1.0;  /* this should mean that there's not alot of space between the two lines. if what i read is correct, 1.0 should make it so that the two lines almost touch? not sure */
 
-    z-index: -1; /* this puts it behind everything */
-                 /* the default z-index is 0. we can think of the z-index as a layer inside of an image editor like gimp or paint.net */
+    z-index: -1;
 }
 
 main {
-    margin-top: 150vh;  /* with this, i'm trying to push the text below the gradient that i added to the photo */
-    color: white;     /* this is for trying to test aesthetics, of course */
+    margin-top: 150vh; 
+    color: white;     
     font-size: 1.2em;
 }
 
