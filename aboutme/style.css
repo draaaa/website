@@ -1,35 +1,41 @@
 body {
-    font-family: "IBM Plex Mono", monospace;
+    font-family: "IBM Plex Mono", monospace;  /* defaults to monospace, uses IBM Plex Mono if detected */
+    background-image: url(Sitethingy.png);  /* this isnt a url idk why it has to be a url */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position-y: 15%;
+    background-size: 100% auto;
+
+    overflow-x: hidden;  /* this should kill scrolling for both directions, but im not entirely sure. */
 }
 
-h1 {
-    font-size: 40px;
-}
+.wardlowcc {
+    font-size: 9em;
+    color: white;
+    position: absolute;  /* changed from relative, absolute positioning removes it from the normal page flow */
+    width: 100%;
+    height: 100vh;
 
-div {
-    grid-template-columns: 1fr 5fr;
-    display: grid;
-    border: 3.5px solid black;
-}
+    line-height: 1.0;  /* this should mean that there's not alot of space between the two lines. if what i read is correct, 1.0 should make it so that the two lines almost touch? not sure */
 
-nav {
-    grid-column: 1;
-    padding-top: 10px;
-    text-align-last: center;
-
-    font-size: 1.15em;
+    z-index: -1; /* this puts it behind everything */
+                 /* the default z-index is 0. we can think of the z-index as a layer inside of an image editor like gimp or paint.net */
 }
 
 main {
-    grid-column: 2;
-
-    border-left: 3.5px solid black;
+    margin-top: 150vh;  /* with this, i'm trying to push the text below the gradient that i added to the photo */
+    color: white;     /* this is for trying to test aesthetics, of course */
+    font-size: 1.2em;
 }
 
-p {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    
-    font-size: 1em;
+nav {
+    font-size: 1.2em;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:visited {
+    color: gray;
 }
