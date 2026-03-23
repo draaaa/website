@@ -34,6 +34,7 @@
 
       <h2>Iteration 3</h2>
       <p>With iteration 3, I eventually just bit the bullet and decided to route port 22 from my router's public IPv4 to my own server. In terms of connection speeds, it's much greater now, and I haven't had any issues at UC or at Mc Donald's. However, it does leave open a larger issue. NFS is unencrypted by default. When I was using NFS, the encryption provided to me by Tailscale had resolved that security issue, but now that I'm using a much more simple direct connection to my router's public IP, NFS' unencrypted traffic would not suffice. So, instead, I began using SSHFS. I haven't had any issues with SSHFS since. The only thing that is notable with SSHFS is that it uses the CPU to encrypt the traffic, but that's a non-issue. SSHFS encryption really doesn't do much to the CPU, and I doubt that it would any time after the Intel Core 2 Duo age or something.</p>
+      <p>I'm not super worried about risks now, since I've turned off password SSH authentication as well as the Tailscale and NFS services. Now it's all though SSH keys, so it should be pretty safe. Just to be sure though I won't be storing any sensitive documents on there.</p>
 
       <h2>Where that leaves us</h2>
       <p>Now that I have everything working, I'm at the stage where I can use the server as a cloud for a handfull of documents as well as begin to test the bandwidth speeds of hardware across networks. More to come on the testing soon.</p>
