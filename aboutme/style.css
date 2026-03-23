@@ -27,6 +27,14 @@ main {
     font-size: 1.2em;
 }
 
+main a {
+    color: white;
+}
+
+main a:visited {
+    color: gray;
+}
+
 nav {
     font-size: 1.2em;
 }
