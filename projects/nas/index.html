@@ -24,18 +24,18 @@
 
     <main>
       <p>For my 2026 Spring Semester EEP, I decided to begin running my own cloud server from home. Among other things, I intend to establish the data transfer speeds of older hardware.</p>
-      <p>There's a decent bit of history, so I will write a sort of sequence of events, as well as what the current result is.</p><br>
+      <p>There's a decent bit of history, so I will write a sort of sequence of events, as well as what the current result is.</p>
       
-      <h4>Iteration 1</h4>
-      <p>This is when I started to research and try to understand a few of the tools that exist for this kind of thing. I began using NFS and local connections as a proof of concept, but the server itself never really saw much use. As I continued to work on the project, the largest issue that I experienced was that since I was only using local connections, I would have no access to the cloud outside of my home.</p><br>
+      <h2>Iteration 1</h2>
+      <p>This is when I started to research and try to understand a few of the tools that exist for this kind of thing. I began using NFS and local connections as a proof of concept, but the server itself never really saw much use. As I continued to work on the project, the largest issue that I experienced was that since I was only using local connections, I would have no access to the cloud outside of my home.</p>
 
-      <h4>Iteration 2</h4>
+      <h2>Iteration 2</h2>
       <p>There was a bit of an annoying path that I took to try to access the machine from outside of the local network. At first, I wanted to use Wireguard, but I found out rather quickly that Wireguard wouldn't do much for me since I did not want to use my router's public IP. I then looked into Cloudflared, since I knew that I had a domain registered through Cloudflare. I thought that using my domain to SSH to the server would be cool, but I ran into the same issue that I had with Wireguard in that both are kind of meant to be used in conjunction with publicly accessible servers. I ultimately had to take a much easier way out by using Tailscale, which was much more seamless... on some connections. The issue with using Tailscale to get remote access to a server is that some NATs are expecting the destination IP and the IP of the returning packets are expected to be the same. This is called a 'Symmetric NAT', which was the largest source of my headaches when I was trying to use the server at University of Cincinnati. I also tested it at Mc Donald's, which failed in a very similar fashion to how it does at UC. The only places that I could acquire a direct connection via Tailscale was at one local coffee shop, and other home networks.</p>
 
-      <h4>Iteration 3</h4>
+      <h2>Iteration 3</h2>
       <p>With iteration 3, I eventually just bit the bullet and decided to route port 22 from my router's public IPv4 to my own server. In terms of connection speeds, it's much greater now, and I haven't had any issues at UC or at Mc Donald's. However, it does leave open a larger issue. NFS is unencrypted by default. When I was using NFS, the encryption provided to me by Tailscale had resolved that security issue, but now that I'm using a much more simple direct connection to my router's public IP, NFS' unencrypted traffic would not suffice. So, instead, I began using SSHFS. I haven't had any issues with SSHFS since. The only thing that is notable with SSHFS is that it uses the CPU to encrypt the traffic, but that's a non-issue. SSHFS encryption really doesn't do much to the CPU, and I doubt that it would any time after the Intel Core 2 Duo age or something.</p>
 
-      <h4>Where that leaves us</h4>
+      <h2>Where that leaves us</h2>
       <p>Now that I have everything working, I'm at the stage where I can use the server as a cloud for a handfull of documents as well as begin to test the bandwidth speeds of hardware across networks. More to come on the testing soon.</p>
     </main>
 
