@@ -2,10 +2,14 @@ body {
     font-family: "IBM Plex Mono", monospace;
     
     background-color: black;
-    background-image: url(IMG_4858.jpg);
+    background-image: url(Sitethingy.png);
     background-repeat: no-repeat;
     background-position-y: 15%;
     background-size: 105% auto;
+
+    overflow-x: hidden;
+    /* i have no idea why it took me so long to do the overflow-x thing and change the image, but its done now.
+       i guess i've just been to focused on the other stuff that i have going on for this eep */
 }
 
 main {
