@@ -17,4 +17,5 @@ My handshake profile is up to date and contains all of my projects. You can find
 This project is under the Unlicense, which means that it's all in the public domain. No attribution required, no license terms, nothing! Feel free to rip it if you wish!
 
 ### What's this?
-This part is a test. I'm trying to switch to Doom Emacs, and this would be my first push from it!!!!
+This part is a test. I'm trying to switch to Doom Emacs, and this would be my first push from it!!!!<br>
+that's from earlier i just want to make sure that git is properly synced to vsc. if you're reading this, doom emacs is too hard :(<br>
