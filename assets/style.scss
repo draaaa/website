@@ -1,0 +1,13 @@
+---
+---
+body {
+    background: black;
+    color: white;
+    font-family: "IBM PLex Mono", monospace;
+
+    nav a {
+        color: lightgrey;
+        &:visited { color: grey; }
+    }
+
+}
